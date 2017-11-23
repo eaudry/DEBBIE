@@ -40,7 +40,8 @@ public class MapGUI extends JFrame{
         this.setResizable(false);
         this.setSize(1550, 1080);
         this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        //Only close this window on exit:
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setContentPane(frame);
 
         //On définit le type de layout de notre main panel
