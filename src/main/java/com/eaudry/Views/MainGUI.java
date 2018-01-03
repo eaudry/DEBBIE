@@ -166,7 +166,8 @@ public class MainGUI extends JFrame{
                 String filePath = getfilepath();
                 //new MapGUI();
                 AISFileTrackController aisftc = new AISFileTrackController();
-                Track track = aisftc.computeCSVfile(filePath);
+                //Track track = aisftc.computeCSVfile(filePath);
+                Track track = aisftc.computeJSONfile(filePath);
                 new MapGUI(track);
             }
             catch(Exception ex){
